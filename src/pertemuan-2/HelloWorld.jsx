@@ -9,10 +9,11 @@ export default function HelloWorld(){
 
     return (
         <div class="card">
+            <img src="img/cake.png" alt="logo"/>
             <h1>Hello World</h1>
             <p class="box">Selamat Belajar ReactJs</p>
 
-            <img src="img/cake.png" alt="logo"/>
+            
 
             <GreetingBinjai/>
             <QuoteText/>
