@@ -2,31 +2,55 @@ import InputField from "./components/InputField";
 
 export default function UserForm() {
   return (
-    <div className="flex flex-col items-center justify-center m-5 p-5 bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-        <h2 className="text-2xl font-semibold text-center mb-4">Tambah User</h2>
-        <label className="block text-gray-700 font-medium">Nama</label>
-        <InputField
-          type="nama"
-          placeholder="Masukkan Nama"
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#F5E2E3] p-5">
+      
+      {/* CARD */}
+      <div className="bg-white p-6 rounded-2xl shadow-xl w-96 border border-[#F5E2E3]">
+        
+        {/* TITLE */}
+        <h2 className="text-2xl font-semibold text-center mb-6 text-[#D0A0A3]">
+          Tambah User
+        </h2>
 
-          className="w-full p-2 border border-gray-300 rounded mb-2"
+        {/* NAMA */}
+        <label className="block text-[#D0A0A3] font-medium mb-1">
+          Nama
+        </label>
+        <InputField
+          type="text"
+          placeholder="Masukkan Nama"
+          className="w-full p-2 border border-[#ECCBC9] rounded-lg mb-3 
+                     focus:outline-none focus:ring-2 focus:ring-[#ECCBC9]"
         />
-        <label className="block text-gray-700 font-medium">Email</label>
+
+        {/* EMAIL */}
+        <label className="block text-[#D0A0A3] font-medium mb-1">
+          Email
+        </label>
         <InputField
           type="email"
           placeholder="Masukkan Email"
-          className="w-full p-2 border border-gray-300 rounded mb-2"
+          className="w-full p-2 border border-[#ECCBC9] rounded-lg mb-3 
+                     focus:outline-none focus:ring-2 focus:ring-[#ECCBC9]"
         />
-        <label className="block text-gray-700 font-medium">Tanggal Lahir</label>
+
+        {/* TANGGAL */}
+        <label className="block text-[#D0A0A3] font-medium mb-1">
+          Tanggal Lahir
+        </label>
         <InputField
           type="date"
-          placeholder="Masukkan Tanggal Lahir"
-          className="w-full p-2 border border-gray-300 rounded mb-4"
+          className="w-full p-2 border border-[#ECCBC9] rounded-lg mb-5 
+                     focus:outline-none focus:ring-2 focus:ring-[#ECCBC9]"
         />
-        <button className="w-full bg-pink-500 text-white p-2 rounded">
+
+        {/* BUTTON */}
+        <button className="w-full bg-[#D0A0A3] text-white p-2 rounded-xl 
+                           shadow-md hover:bg-[#E0C5C4] hover:text-[#5A4A4A]
+                           transition duration-300">
           Simpan
         </button>
+
       </div>
     </div>
   );

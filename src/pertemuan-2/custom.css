@@ -6,7 +6,10 @@
 
 body{
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(135deg,#ffd6e7,#e6d9ff,#cde7ff);
+
+    /* 🌸 BACKGROUND BARU */
+    background: linear-gradient(135deg,#F5E2E3,#ECCBC9,#ECEBE8);
+
     min-height: 100vh;
 
     display:flex;
@@ -21,17 +24,15 @@ body{
     width:90%;
     max-width:700px;
 
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(14px);
 
     padding:45px;
-
     border-radius:30px;
 
-    box-shadow:0 30px 60px rgba(120,120,150,0.25);
+    box-shadow:0 30px 60px rgba(208,160,163,0.25);
 
     text-align:center;
-
     transition:0.4s;
 }
 
@@ -41,30 +42,28 @@ body{
 
 /* JUDUL */
 h1{
-    color:#6a8bcf;
+    color:#D0A0A3;
     font-size:2.3rem;
     margin-bottom:10px;
     letter-spacing:1px;
 }
 
 h2{
-    color:#7c8fd9;
+    color:#B5838D;
     margin-bottom:25px;
     font-weight:600;
 }
 
 /* CARD DALAM */
 .box{
-    background:#f5f7ff;
+    background:#F5E2E3;
 
     padding:22px;
-
     border-radius:18px;
 
     margin:18px 0;
 
     box-shadow:0 8px 18px rgba(0,0,0,0.05);
-
     transition:0.3s;
 }
 
@@ -75,7 +74,7 @@ h2{
 
 /* TEXT */
 p{
-    color:#5c6b88;
+    color:#7A6F6F;
     font-size:15px;
     margin:0;
 }
@@ -94,7 +93,7 @@ hr{
     width:70px;
     margin:18px auto;
 
-    background:linear-gradient(90deg,#9be7a4,#a8e6ff);
+    background:linear-gradient(90deg,#ECCBC9,#D0A0A3);
 
     border-radius:10px;
 }
@@ -102,19 +101,17 @@ hr{
 /* BUTTON */
 .btn{
     display:inline-block;
-
     margin-top:25px;
 
     padding:12px 28px;
 
-    background:linear-gradient(135deg,#e6d9ff,#ffd6e7);
+    background:linear-gradient(135deg,#ECCBC9,#D0A0A3);
 
-    color:#5a46a5;
+    color:#5A4A4A;
 
     border-radius:50px;
 
     text-decoration:none;
-
     font-weight:600;
 
     transition:0.3s;
@@ -122,13 +119,13 @@ hr{
 
 .btn:hover{
     transform:scale(1.08);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    box-shadow:0 10px 25px rgba(208,160,163,0.3);
 }
 
 /* SMALL TEXT */
 small{
     display:block;
     margin-top:20px;
-    color:#7a869f;
+    color:#9A8C8C;
     font-size:13px;
 }
