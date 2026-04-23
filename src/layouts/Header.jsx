@@ -5,15 +5,14 @@ import { SlSettings } from "react-icons/sl";
 
 export default function Header() {
 
-    // STATE MODAL
     const [openSearch, setOpenSearch] = useState(false);
 
     return (
         <>
-            <div className="flex justify-between items-center px-6 py-4 bg-white shadow-sm rounded-2xl">
+            {/* HEADER */}
+            <div className="w-full flex justify-between items-center px-6 py-4 bg-white border-b border-gray-100">
 
-                {/*  SEARCH BAR */}
-                {/* IMPROVISASI: klik buka modal */}
+                {/* SEARCH */}
                 <div
                     onClick={() => setOpenSearch(true)}
                     className="relative w-full max-w-md cursor-pointer"
@@ -27,9 +26,10 @@ export default function Header() {
                     <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400" />
                 </div>
 
-                {/* ICON */}
+                {/* RIGHT */}
                 <div className="flex items-center gap-4 ml-6">
 
+                    {/* NOTIF */}
                     <div className="relative cursor-pointer">
                         <div className="p-3 bg-pink-50 rounded-xl text-pink-500 hover:bg-pink-100 transition">
                             <FaBell />
@@ -39,16 +39,18 @@ export default function Header() {
                         </span>
                     </div>
 
+                    {/* CHART */}
                     <div className="p-3 bg-pink-50 rounded-xl hover:bg-pink-100 transition">
                         <FcAreaChart />
                     </div>
 
+                    {/* SETTINGS */}
                     <div className="p-3 bg-pink-50 rounded-xl text-pink-500 hover:bg-pink-100 transition">
                         <SlSettings />
                     </div>
 
                     {/* PROFILE */}
-                    <div className="flex items-center gap-3 border-l pl-4 border-pink-200">
+                    <div className="flex items-center gap-3 border-l pl-4 border-gray-200">
                         <div>
                             <p className="text-gray-400 text-xs">Welcome back</p>
                             <p className="font-semibold text-gray-700">Geta Dewi Artika Sari</p>
@@ -57,7 +59,7 @@ export default function Header() {
                         <img
                             src="/img/foto.jpeg"
                             alt="profile"
-                            className="w-10 h-10 rounded-full object-cover border-2 border-gray-200"
+                            className="w-10 h-10 rounded-full object-cover border"
                         />
                     </div>
 
@@ -68,16 +70,13 @@ export default function Header() {
             {openSearch && (
                 <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
 
-                    {/* klik luar untuk close */}
                     <div
                         className="absolute inset-0"
                         onClick={() => setOpenSearch(false)}
                     />
 
-                    {/* BOX */}
                     <div className="relative bg-white w-full max-w-xl p-6 rounded-2xl shadow-xl">
 
-                        {/* CLOSE */}
                         <button
                             onClick={() => setOpenSearch(false)}
                             className="absolute top-4 right-4 text-gray-400 hover:text-pink-500"
@@ -85,7 +84,6 @@ export default function Header() {
                             <FaTimes />
                         </button>
 
-                        {/* INPUT */}
                         <div className="relative">
                             <input
                                 autoFocus
@@ -97,7 +95,6 @@ export default function Header() {
                             <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400" />
                         </div>
 
-                        {/* TEXT */}
                         <div className="mt-4 text-sm text-gray-400">
                             Start typing to search...
                         </div>

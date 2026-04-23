@@ -50,13 +50,13 @@ export default function Dashboard() {
         <div className="flex-1 p-6 overflow-auto">
 
             <PageHeader
-                onAdd={() => {
-                    setOrders(orders + 5);
-                    setDelivered(delivered + 3);
-                    setRevenue(revenue + 20);
-                    setCustomers(customers + 10);
-                }}
-            />
+                title="Dashboard"
+                breadcrumb={["Dashboard"]}
+>
+            <button className="bg-pink-500 text-white px-4 py-2 rounded-xl">
+                + Add Orders
+            </button>
+        </PageHeader>
 
             {/* CARD */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
