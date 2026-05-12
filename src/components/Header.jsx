@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <>
             {/* HEADER */}
-            <div className="w-full flex justify-between items-center px-6 py-4 bg-white border-b border-gray-100">
+            <div className="fixed top-0 left-64 w-[calc(100%-16rem)] z-40 flex justify-between items-center px-6 py-4 bg-white border-b border-gray-100">
 
                 {/* SEARCH */}
                 <div

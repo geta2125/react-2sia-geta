@@ -18,7 +18,10 @@ import Loading from "./components/Loading";
 function App() {
   const Dashboard = React.lazy(() => import("./pages/Dashboard"))
   const Customers = React.lazy(() => import("./pages/Customers"))
+  const CustomerDetail = React.lazy(() => import("./pages/CustomerDetail"))
   const Orders = React.lazy(() => import("./pages/Orders"))
+  const Products = React.lazy(() => import("./pages/Products"))
+  const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
   const NotFound = React.lazy(() => import("./pages/NotFound"))
   const Error400 = React.lazy(() => import("./pages/Error400"))
   const Error401 = React.lazy(() => import("./pages/Error401"))
@@ -37,7 +40,9 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
-
+          <Route path="/customers/:id" element={<CustomerDetail />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           {/* ERROR */}
           <Route path="/error400" element={<Error400 />} />
           <Route path="/error401" element={<Error401 />} />

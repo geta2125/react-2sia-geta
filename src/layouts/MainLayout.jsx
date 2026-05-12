@@ -4,17 +4,24 @@ import Header from "../components/Header";
 
 export default function MainLayout() {
     return (
-        <div className="flex min-h-screen bg-gray-100">
+        <div className="bg-gray-100 min-h-screen">
+
             {/* SIDEBAR */}
             <Sidebar />
 
-            {/* MAIN */}
-            <div className="flex flex-col flex-1">
+            {/* MAIN CONTENT */}
+            <div className="ml-64 pt-28">
+
                 {/* HEADER */}
                 <Header />
 
-                <Outlet />
+                {/* PAGE */}
+                <main className="p-6">
+                    <Outlet />
+                </main>
+
             </div>
+
         </div>
     );
 }

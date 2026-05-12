@@ -82,7 +82,7 @@ export default function Orders() {
                     <h2 className="font-semibold text-pink-600">Order List</h2>
                 </div>
 
-                <table className="w-full text-sm">
+                <table className="w-full text-sm text-center">
 
                     <thead className="bg-pink-50 text-pink-600">
                         <tr>

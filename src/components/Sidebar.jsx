@@ -2,6 +2,7 @@ import {
     FaHome,
     FaClipboardList,
     FaFileAlt,
+    FaBoxOpen,
     FaExclamationCircle,
     FaTimesCircle,
     FaBan
@@ -21,14 +22,14 @@ export default function Sidebar() {
         { key: "/", label: "Dashboard", icon: <FaHome /> },
         { key: "/orders", label: "Orders", icon: <FaClipboardList /> },
         { key: "/customers", label: "Customers", icon: <FaFileAlt /> },
+        { key: "/products", label: "Products", icon: <FaBoxOpen /> },
         { key: "/error400", label: "Error 400", icon: <FaExclamationCircle /> },
         { key: "/error401", label: "Error 401", icon: <FaTimesCircle /> },
         { key: "/error403", label: "Error 403", icon: <FaBan /> },
     ];
 
     return (
-        <div className="w-64 h-screen bg-white shadow-lg border-r border-gray-100 flex flex-col justify-between px-5 py-6">
-
+        <div className="fixed top-0 left-0 w-64 h-screen bg-white shadow-lg border-r border-gray-100 flex flex-col justify-between px-5 py-6 z-50">
             {/* LOGO */}
             <div>
                 <div className="mb-10">
