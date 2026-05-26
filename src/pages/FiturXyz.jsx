@@ -96,13 +96,13 @@ export default function FiturXyz() {
                         <h2 className="text-lg font-bold text-gray-800">
                             Daftar Isu Strategis di Indonesia
                         </h2>
-                        <p className="text-sm text-gray-500 mt-1">
+                        <p className="text-sm text-pink-500 mt-1">
                             Memantau perkembangan, analisis risiko, dan status penanganan isu nasional terkini.
                         </p>
                     </div>
                     {/* Statistik Ringkas */}
                     <div className="flex gap-2 self-start sm:self-center">
-                        <span className="text-xs bg-gray-100 text-gray-600 px-3 py-1.5 rounded-lg font-medium">
+                        <span className="text-xs bg-pink-100 text-pink-700 px-3 py-1.5 rounded-lg font-medium">
                             Total Isu: {dataIsu.length}
                         </span>
                     </div>
@@ -111,7 +111,7 @@ export default function FiturXyz() {
                 {/* Wrapper Tabel Responsif */}
                 <div className="overflow-x-auto">
                     <table className="w-full text-left border-collapse">
-                        <thead className="bg-gray-50 border-b border-gray-200">
+                        <thead className="bg-pink-50 border-b border-gray-200">
                             <tr>
                                 <th className="p-4 text-xs font-semibold uppercase tracking-wider text-gray-500 text-center w-16">No</th>
                                 <th className="p-4 text-xs font-semibold uppercase tracking-wider text-gray-500 w-64">Isu Strategis</th>

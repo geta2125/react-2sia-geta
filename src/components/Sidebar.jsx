@@ -65,7 +65,7 @@ export default function Sidebar() {
             </div>
 
             {/* CARD */}
-            <div className="bg-gradient-to-br from-pink-400 to-pink-600 text-white p-5 rounded-2xl shadow-lg">
+            <div className="bg-gradient-to-br from-pink-400 to-pink-150 text-white p-5 rounded-2xl shadow-lg">
                 <p className="text-sm mb-4">
                     Please organize your menus through button below!
                 </p>
