@@ -64,7 +64,7 @@ export default function Products() {
                 />
                 <button
                     onClick={() => setShowForm(true)}
-                    className="flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 hover:shadow-pink-200 shadow-lg text-white px-6 py-3 rounded-2xl transition-all active:scale-95 font-bold"
+                    className="flex items-center justify-center gap-2 bg-pink-200 hover:bg-pink-300 hover:shadow-pink-200 shadow-lg text-white px-6 py-3 rounded-2xl transition-all active:scale-95 font-bold"
                 >
                     <FaPlus className="text-sm" />
                     Add New Product

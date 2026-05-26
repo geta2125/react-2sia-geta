@@ -81,7 +81,7 @@ export default function FiturXyz() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-50/50 p-6">
+        <div>
             {/* Page Header */}
             <PageHeader
                 title="Fitur XYZ"
