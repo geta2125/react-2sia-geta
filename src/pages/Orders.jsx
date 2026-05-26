@@ -49,7 +49,7 @@ export default function Orders() {
                     className="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 py-3 rounded-2xl shadow-lg shadow-pink-200 transition-all active:scale-95 font-bold"
                 >
                     <FaPlus size={14} />
-                    Create New Order
+                    Add New Order
                 </button>
             </div>
 
@@ -140,7 +140,7 @@ export default function Orders() {
                             </div>
                             <div className="pt-4 flex gap-3">
                                 <button type="button" onClick={() => setShowForm(false)} className="flex-1 py-4 rounded-2xl font-bold text-gray-500 hover:bg-gray-100 transition">Discard</button>
-                                <button type="submit" className="flex-1 py-4 rounded-2xl font-bold bg-pink-500 text-white shadow-lg shadow-pink-100 hover:bg-pink-600 transition-all">Create Order</button>
+                                <button type="submit" className="flex-1 py-4 rounded-2xl font-bold bg-pink-500 text-white shadow-lg shadow-pink-100 hover:bg-pink-600 transition-all">Add Order</button>
                             </div>
                         </form>
                     </div>

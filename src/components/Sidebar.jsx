@@ -5,7 +5,8 @@ import {
     FaBoxOpen,
     FaExclamationCircle,
     FaTimesCircle,
-    FaBan
+    FaBan,
+    FaLaptopCode 
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
@@ -23,6 +24,7 @@ export default function Sidebar() {
         { key: "/orders", label: "Orders", icon: <FaClipboardList /> },
         { key: "/customers", label: "Customers", icon: <FaFileAlt /> },
         { key: "/products", label: "Products", icon: <FaBoxOpen /> },
+        { key: "/fiturxyz", label: "FiturXyz", icon: <FaLaptopCode /> },
         { key: "/error400", label: "Error 400", icon: <FaExclamationCircle /> },
         { key: "/error401", label: "Error 401", icon: <FaTimesCircle /> },
         { key: "/error403", label: "Error 403", icon: <FaBan /> },
