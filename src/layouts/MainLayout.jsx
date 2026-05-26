@@ -15,7 +15,7 @@ export default function MainLayout() {
                 {/* HEADER */}
                 <Header />
 
-                {/* PAGE */}
+                {/* PAGES */}
                 <main className="p-6">
                     <Outlet />
                 </main>
