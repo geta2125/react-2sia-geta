@@ -28,6 +28,7 @@ export default function Sidebar() {
         { key: "/component", label: "Component", icon: <FaLayerGroup /> },        
         { key: "/reviews", label: "Reviews", icon: <FaStar /> },
         { key: "/analytics", label: "Analytics", icon: <FaChartBar /> },
+        { key: "/FiturXyz", label: "Fitur Xyz", icon: <FaLayerGroup /> }
     ];
 
     return (
