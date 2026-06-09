@@ -6,7 +6,7 @@ import {
     FaLayerGroup,
     FaStar,
     FaChartBar,
-    FaCalendarAlt
+    FaStickyNote
 } from "react-icons/fa";
 
 import { NavLink } from "react-router-dom";
@@ -25,10 +25,11 @@ export default function Sidebar() {
         { key: "/orders", label: "Orders", icon: <FaClipboardList /> },
         { key: "/customers", label: "Customers", icon: <FaFileAlt /> },
         { key: "/products", label: "Products", icon: <FaBoxOpen /> },
-        { key: "/component", label: "Component", icon: <FaLayerGroup /> },        
+        { key: "/component", label: "Component", icon: <FaLayerGroup /> },
         { key: "/reviews", label: "Reviews", icon: <FaStar /> },
         { key: "/analytics", label: "Analytics", icon: <FaChartBar /> },
-        { key: "/FiturXyz", label: "Fitur Xyz", icon: <FaLayerGroup /> }
+        { key: "/FiturXyz", label: "Fitur Xyz", icon: <FaLayerGroup /> },
+        { key: "/Note", label: "Note", icon: <FaStickyNote /> }
     ];
 
     return (

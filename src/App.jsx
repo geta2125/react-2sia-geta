@@ -35,6 +35,7 @@ function App() {
   const AuthLayout = React.lazy(() => import("./pages/auth/AuthLayout"))
   const MainLayout = React.lazy(() => import("./layouts/MainLayout"))
   const FiturXyz = React.lazy(() => import("./pages/FiturXyz"))
+  const Note = React.lazy(() => import("./pages/Note"))
   // const loading = React.lazy(() => import("./components/Loading")) -> KARENA DIA GA DIDALAM PAGES
   return (
     // main content
@@ -49,6 +50,7 @@ function App() {
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/Component" element={<Component />} />
           <Route path="/FiturXyz" element={<FiturXyz />} />
+          <Route path="/Note" element={<Note />} />
 
           {/* ERROR */}
           <Route path="/error400" element={<Error400 />} />
